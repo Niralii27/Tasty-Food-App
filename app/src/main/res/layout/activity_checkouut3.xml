@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Progress Indicator Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="65dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery address"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:paddingEnd="8dp" />
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:background="#FF9800" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingStart="8dp"
+                android:textSize="16dp"
+                android:paddingEnd="8dp" />
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:background="#E0E0E0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Placed"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#FF9800"
+                android:paddingStart="8dp" />
+        </LinearLayout>
+
+        <!-- Main Order Placed Content -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <!-- Order Placed Icon -->
+            <ImageView
+                android:id="@+id/order_placed_icon"
+                android:layout_width="370dp"
+                android:layout_height="370dp"
+                android:src="@drawable/ordercomplete" />
+
+            <!-- Order Placed Text -->
+            <TextView
+                android:id="@+id/order_placed_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Placed Successfully!"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="16dp"
+                android:gravity="center"/>
+
+            <!-- Congratulations Message -->
+            <TextView
+                android:id="@+id/congrats_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Congratulations! Your order has been placed."
+                android:textSize="16sp"
+                android:textColor="#555"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="8dp"
+                android:gravity="center"/>
+
+            <!-- Order Number with Link -->
+            <TextView
+                android:id="@+id/order_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can track your order number"
+                android:textSize="16sp"
+                android:textColor="#FFA500"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="8dp"
+                android:gravity="center"/>
+
+            <!-- Buttons -->
+            <TextView
+                android:id="@+id/order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="#272727"
+                android:textStyle="bold"
+                android:textColor="#FFA500"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <!-- Continue Shopping Button -->
+
+                <!-- Track Order Button -->
+                <Button
+                    android:id="@+id/btn_continue_shopping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CCCCCC"
+                    android:text="Continue shopping"
+                    android:textColor="#000" />
+
+                <Button
+                    android:id="@+id/btn_track_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:backgroundTint="#FFA500"
+                    android:text="Track order"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

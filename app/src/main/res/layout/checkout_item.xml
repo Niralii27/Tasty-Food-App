@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/item_address.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:elevation="4dp">
+
+    <!-- Address Title (e.g., "Home", "Office") -->
+    <TextView
+        android:id="@+id/address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <!-- Address Details -->
+    <TextView
+        android:id="@+id/address_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_title"
+        android:layout_marginTop="4dp"
+        android:text="1234 Elm Street, Springfield, IL 62704"
+        android:textColor="#777777"
+        android:textSize="14sp" />
+
+    <!-- Radio Button for Selection -->
+    <RadioButton
+        android:id="@+id/radio_select_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

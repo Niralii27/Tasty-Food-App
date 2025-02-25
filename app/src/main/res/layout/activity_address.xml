@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAF5EB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical">
+
+        <!-- First Name and Last Name Fields in Horizontal Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="First name"
+                android:background="@drawable/address_card_background"
+                android:padding="12dp"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Last name"
+                android:background="@drawable/address_card_background"
+                android:padding="12dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- Address Field -->
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:background="@drawable/address_card_background"
+            android:padding="12dp"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"/>
+
+        <!-- Apartment, suite, etc. Field -->
+        <EditText
+            android:id="@+id/apartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apartment, suite, etc."
+            android:background="@drawable/address_card_background"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <!-- City Field -->
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:background="@drawable/address_card_background"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <!-- State/Province Dropdown -->
+        <Spinner
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/address_card_background"
+            android:padding="12dp"
+            android:spinnerMode="dropdown"/>
+
+        <!-- Country Dropdown -->
+        <Spinner
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/address_card_background"
+            android:padding="12dp"
+            android:spinnerMode="dropdown"/>
+
+        <!-- ZIP/Postal Code Field -->
+        <EditText
+            android:id="@+id/postal_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ZIP/postal code"
+            android:background="@drawable/address_card_background"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Latitude"
+            android:background="@drawable/address_card_background"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Longitude"
+            android:background="@drawable/address_card_background"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <!-- Address Type Radio Buttons -->
+        <RadioGroup
+            android:id="@+id/address_type_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/radio_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radio_office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Office"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <!-- Save Address Button -->
+        <Button
+            android:id="@+id/save_address_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Save Address"
+            android:backgroundTint="#FFA726"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+    </LinearLayout>
+</ScrollView>

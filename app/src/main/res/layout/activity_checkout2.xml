@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Progress Indicator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="65dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery address"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:paddingEnd="8dp" />
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:background="#FF9800" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:textStyle="bold"
+                android:textColor="#FF9800"
+                android:paddingStart="8dp"
+                android:textSize="18dp"
+                android:paddingEnd="8dp" />
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:background="#E0E0E0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Placed"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:paddingStart="8dp" />
+        </LinearLayout>
+
+        <!-- Payment Selection (Place your existing payment options code here) -->
+        <RadioGroup
+            android:id="@+id/paymentOptionsGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <!-- PayPal Option -->
+            <RadioButton
+                android:id="@+id/radio_paypal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/paypal"
+                android:drawablePadding="8dp"
+                android:text="PayPal"
+                android:textSize="16sp"
+                android:checked="true"
+                android:padding="12dp"/>
+
+            <!-- Credit Card Option -->
+            <RadioButton
+                android:id="@+id/radio_credit_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/card"
+                android:text="Credit Card"
+                android:textSize="16sp"
+                android:padding="12dp"/>
+
+            <!-- Apple Pay Option -->
+            <RadioButton
+                android:id="@+id/radio_apple_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/applepay"
+                android:drawablePadding="8dp"
+                android:text="Apple Pay"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:padding="12dp"/>
+
+            <!-- Google Pay Option -->
+            <RadioButton
+                android:id="@+id/radio_google_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/googlepay"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Google Pay"
+                android:textSize="16sp"
+                android:padding="12dp"/>
+
+            <!-- WebMoney Option -->
+            <RadioButton
+                android:id="@+id/radio_webmoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/cash"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Cash on Delivery"
+                android:textSize="16sp"
+                android:padding="12dp"/>
+        </RadioGroup>
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/btn_add_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:backgroundTint="#FF6A00"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="34dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+</ScrollView>

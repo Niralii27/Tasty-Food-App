@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:background="#FFFAFA"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akbari Nirali"
+            android:textColor="@color/black"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="5dp"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="akbarinirali@gmail.com"
+            android:textColor="@color/black"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/txt_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27172 71727"
+            android:textColor="@color/black"
+            android:layout_below="@+id/txt_email"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="301,shyam apartment,Back bone park-9,Rajkot"
+            android:textColor="@color/black"
+            android:layout_below="@+id/txt_number"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/txt_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help to find my address location"
+            android:textColor="@color/black"
+            android:layout_below="@+id/txt_address"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:textSize="18dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

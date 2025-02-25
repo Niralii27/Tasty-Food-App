@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "445033956776",
+    "project_id": "tasty-d8afb",
+    "storage_bucket": "tasty-d8afb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445033956776:android:ed2c8f054a274cf9e8499d",
+        "android_client_info": {
+          "package_name": "com.nirali.tasty"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaypEUVIW_YZeHPiJuD0vYgJTXr4x2kr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

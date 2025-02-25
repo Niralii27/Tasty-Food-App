@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <!-- Horizontal LinearLayout for icons and text -->
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="400dp"
+                android:layout_height="40dp">
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/img_profile"-->
+<!--                    android:layout_width="45dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_marginTop="7dp"-->
+<!--                    android:layout_marginEnd="34dp"-->
+<!--                    android:contentDescription="Home"-->
+<!--                    android:src="@drawable/back"-->
+<!--                    app:cardCornerRadius="10dp"/>-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="6dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/linear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="1dp">
+
+
+                        <ImageView
+                            android:id="@+id/img_cart"
+                            android:layout_width="27dp"
+                            android:layout_height="35dp"
+                            android:contentDescription="Cart"
+                            android:src="@drawable/cart" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="6dp">
+
+                    <LinearLayout
+                        android:id="@+id/linear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="1dp">
+
+
+                        <ImageView
+                            android:id="@+id/img_notification"
+                            android:layout_width="32dp"
+                            android:layout_height="35dp"
+                            android:contentDescription="Notification"
+                            android:src="@drawable/notification" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cartTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Cart"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cartTitle"
+        android:layout_marginTop="35dp"
+        android:layout_above="@id/checkoutLayout"
+        android:padding="16dp" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/checkoutLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <!-- Total Amount Section -->
+        <RelativeLayout
+            android:id="@+id/totalAmountSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <!-- Information Icon -->
+<!--            <ImageView-->
+<!--                android:id="@+id/infoIcon"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginEnd="4dp"-->
+<!--                android:contentDescription="Info Icon"-->
+<!--                android:src="@drawable/like" />-->
+
+            <!-- Total Text and Amount -->
+            <TextView
+                android:id="@+id/totalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="4dp"
+                android:text="Total:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/totalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/totalText"
+                android:text="₹ 579.6"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Checkout Button -->
+        <Button
+            android:id="@+id/checkoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#FFA500"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="CHECKOUT"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

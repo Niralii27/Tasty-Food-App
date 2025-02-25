@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Page Title -->
+
+    <!-- Step Indicator -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/btn_back"
+        android:text="Checkout (1/3)"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery address"
+            android:textColor="#FFA726"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="#D3D3D3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textColor="#C5C5C5"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="#D3D3D3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Placed"
+            android:textColor="#C5C5C5"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Select Delivery Address Title -->
+    <TextView
+        android:id="@+id/select_delivery_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step"
+        android:layout_marginTop="24dp"
+        android:text="Select delivery address"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    <!-- Add New Address Button -->
+    <Button
+        android:id="@+id/add_new_address_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_delivery_address"
+        android:layout_marginTop="16dp"
+        android:text="Add New Address"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFA726"
+        android:drawableStart="@drawable/like"
+        android:padding="12dp"/>
+
+    <!-- Work Address Card -->
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@id/recyclerView"
+       android:layout_below="@id/add_new_address_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+    <!-- Home Address Card -->
+
+
+
+
+    <Button
+        android:id="@+id/proceed_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="Proceed to Payment"
+        android:backgroundTint="#FFA726"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="12dp"/>
+</RelativeLayout>

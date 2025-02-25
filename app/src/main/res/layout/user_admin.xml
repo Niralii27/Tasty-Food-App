@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="105dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/star"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="20dp"
+            android:text="First Name"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="65dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="20dp"
+            android:text="Email"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

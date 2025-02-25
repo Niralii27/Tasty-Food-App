@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5e8dc"
+    android:fillViewport="true"
+    tools:ignore="ScrollViewCount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <!-- Header Section with Image Background and Text Overlay -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/contact">
+
+            <TextView
+                android:id="@+id/contactTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTACT US"
+                android:textSize="36sp"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110dp" />
+
+            <TextView
+                android:id="@+id/contactSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact The Hungry Viking"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                android:layout_below="@id/contactTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp" />
+        </RelativeLayout>
+
+        <!-- Form and Image Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Email Us Form -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Have a question?"
+                    android:textColor="#F18826"
+                    android:textStyle="italic"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACT US"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:textSize="32sp"
+                    android:layout_marginTop="8dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"
+                    android:layout_marginVertical="8dp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your name"
+                    android:backgroundTint="#CCCCCC"
+                    android:padding="12dp"
+                    android:layout_marginTop="8dp" />
+
+                <EditText
+                    android:id="@+id/number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Number"
+                    android:backgroundTint="#CCCCCC"
+                    android:padding="12dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Email"
+                    android:backgroundTint="#CCCCCC"
+                    android:padding="12dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email address"
+                    android:backgroundTint="#CCCCCC"
+                    android:padding="12dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Enter message..."
+                    android:backgroundTint="#CCCCCC"
+                    android:padding="12dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="top"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/btn_Submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUBMIT"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#333333"
+                    android:textColor="#FFFFFF" />
+
+                <!-- Contact Admin Info Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="24dp"
+                    android:padding="16dp">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone: +91 97721 72717"                   android:textColor="#333333"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email: tasty7@gmail.com"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

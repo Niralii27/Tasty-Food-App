@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:padding="10dp"
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="105dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/star"/>
+
+        <TextView
+            android:id="@+id/itemname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="15dp"
+            android:text="First Name"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_below="@+id/itemname"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="15dp"
+            android:text="Email"/>
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="15dp"
+            android:text="Email"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

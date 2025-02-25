@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6th February"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Order Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+            <TextView
+                android:id="@+id/orderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order ID 694743981955"
+                android:textSize="14sp"
+                android:textColor="#777777" />
+
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sold to Akbari Nirali Kaushikbhai"
+                android:textSize="14sp"
+                android:textColor="#777777" />
+        </LinearLayout>
+
+
+
+        <!-- Product Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/order" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trendy Top Skirts"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/delivery_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered on 09 February, 2024"
+                    android:textSize="14sp"
+                    android:textColor="#4CAF50"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Feedback -->
+        <TextView
+            android:id="@+id/feedback_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We are glad you loved the product!"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#333333" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Star Icons -->
+            <ImageView
+                android:id="@+id/star1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/star1" />
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/star1" />
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/star1" />
+            <ImageView
+                android:id="@+id/star4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/star1" />
+            <ImageView
+                android:id="@+id/star5"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/star1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Complete your Feedback"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="8dp" />
+    </LinearLayout>
+</ScrollView>
